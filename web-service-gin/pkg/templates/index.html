@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head><title>{{ .title }}</title></head>
+<ol style="color: red;  font-size: 40px;">
+{{range $v := .albums}}
+    <li> <div style="color: blue;">
+        <ul>
+      <li>  {{$v.ID}} </li>    
+      <li>  {{$v.Title}} </li>
+      <li>   {{$v.Artist}} </li>
+      <li>  {{$v.Price}} </li>
+    </ul>
+    </div></li> 
+    <br>
+{{end}}
+</ol>
+
+</body>
+</html>
