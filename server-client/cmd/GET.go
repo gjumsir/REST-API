@@ -63,7 +63,7 @@ func get(url string) error {
 	if err != nil {
 		return fmt.Errorf("Got error %s", err.Error())
 	}
-	req.Header.Set("user-agent", "golang application")
+	req.Header.Set("user-agent", "golang client")
 	req.Header.Set("accept", "application/json")
 
 	response, err := client.Do(req)
