@@ -28,9 +28,9 @@ func getCommand(cmd *cobra.Command, args []string) error {
 	All, _ := cmd.Flags().GetString("all")
 
 	if len(args) != 0 {
-		println("<!----------------------------------!>")
+		println("<!-----------------------------------!>")
 		println("Please enter only the requiered fields")
-		println("<!----------------------------------!>")
+		println("<!-----------------------------------!>")
 		println()
 	}
 
